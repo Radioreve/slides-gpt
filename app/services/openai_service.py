@@ -8,11 +8,14 @@ def generate_text_with_ai(text: str) -> str:
         response = openai.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "Vous êtes un assistant qui aide à resumer des textes."},
-                {"role": "user", "content": f"Résume le texte suivant de manière concise : {text}"}
-            ]
+                {"role": "system", "content": "Vous êtes un assistant."},
+                {"role": "user", "content": f"{text}"}
+            ],
+            max_tokens=100
+
         )
 
-        return response["choices"][0]["message"]["content"].strip()
+        #return response["choices"][0]["message"]["content"].strip()
+        return response.choices[0].message.content.strip()
     except Exception as e:
         raise Exception(f"Erreur lors de l'appel à l'API OpenAI : {e}")
