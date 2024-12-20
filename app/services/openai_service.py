@@ -12,7 +12,7 @@ def generate_text_with_ai(text: str) -> str:
             messages=[
                 {"role": "user", "content": text}
             ],
-            max_tokens=500
+            max_tokens=Config.MAX_TOKEN
         )
 
         return response.choices[0].message.content.strip()
