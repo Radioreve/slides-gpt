@@ -30,6 +30,13 @@ OPENAI_API_KEY="your-openai-api-key"
 MAX_TOKEN=100
 ```
 
+## Configurer les informations d'identification de Google API
+
+- Activer l'API Google Slides sur Google Cloud Console
+- Créer un identifiant OAuth 2.0
+- Télécharger le fichier credentials.json
+- Placez le fichier JSON téléchargé dans le répertoire racine du projet.
+
 ## Lancer le serveur
 
 ```shell
