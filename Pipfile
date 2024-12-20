@@ -8,6 +8,9 @@ fastapi = "*"
 uvicorn = "*"
 openai = "*"
 python-dotenv = "*"
+google-auth = "*"
+google-auth-oauthlib = "*"
+google-api-python-client = "*"
 
 [dev-packages]
 

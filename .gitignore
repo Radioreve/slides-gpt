@@ -6,3 +6,4 @@ app/services/__pycache__/
 app/schemas/__pycache__/
 tests/__pycache__/
 __pycache__/
+credentials.json
